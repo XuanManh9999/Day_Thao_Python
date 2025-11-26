@@ -103,9 +103,164 @@
 
 
 # Duyệt list
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Duyệt thông qua chỉ số, chỉ mục
 # for i in range(0, len(a), 1): # (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 #     print(a[i]) # a[0] -> in ra 1; a[1] -> in ra 2; a[2] -> in ra 3
+
+
+# # a = "Thảo"
+# a = True
+# print(list(a))
+
+
+# Buổi 6 ôn tâp về duyệt mảng
+# -1, -2, -3, -4
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+# 7 -> 0 -> 7
+# print(a[0])
+# print(a[1])
+# print(a[2])
+# print(a[3])
+# print(a[4])
+# print(a[5])
+# print(a[6])
+
+# Cách in đầu tiên
+# for i in range(0, len(a), 1):# 0;7;1 (0, 1, 2, 3, 4, 5, 6)
+#     print(a[i]) # 
+  
+  
+    
+# Dùng for in để in ra các giá trị nằm bên trong mảng
+# ý tưởng nó sẽ lấy từng phần tử trong list đó gán cho i    
+# for thao in a: # ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+#     print(thao)
+
+# 
+# for i in range(-1, len(a) * - 1 - 1, -1): # [-1, -6, -1]# -1, -2, -3, -4, -5, -6
+#     print(a[i])
+
+# Thay đổi giá trị của phần tử
+
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+# a[0] = "Bưởi"
+# a[-1] = 2055
+# print(a)
+
+# -- Thêm một phần tử vào list
+# +, append(thêm phần tử vào cuối list), insert (thêm phân từ vào vị trí bất kì trong list))
+
+
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+
+# a.append("2100")
+
+# a.append("Lê") # thêm phần tử vào cuối list
+
+
+# a.insert(3, "Ổi")
+# a.insert(-1, 1900)
+# a.insert(6, 2002)
+
+# print(a)
+
+# => xoá phần tử thông qua chỉ số
+
+# Cách xoá phần tử trong list dùng hàm pop
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+# res = a.pop() # xoá phần tử cuối cùng trong list và trả về chính phần tử đó
+# a.pop(4)
+# a.pop(4)
+# # a.pop(0)
+# # a.pop(-1)
+# print(f"Ban vua xoa thanh cong phan tu: {res}")
+# print(a)
+
+
+# Xoá phần tử khỏi list mà không có kết quả trả về del
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+
+# del a[0]
+# del a[2]
+# del a[3]
+# print(a)
+
+
+# xoá phần tử thông qua giá trị
+# lưu ý hàm này nếu phần tử xoá mà không có trong list thì nó sẽ báo lỗi
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+
+# a.remove("Cam")
+# a.remove(2003)
+
+
+# # khuyên dùng để tránh
+# gia_tri_muon_xoa = input("Nhập vào: ")
+
+# a.remove(gia_tri_muon_xoa)
+
+
+# # if gia_tri_muon_xoa in a:
+# #     a.remove(gia_tri_muon_xoa)
+# # else:
+# #     print("Không xoá")
+
+# print(a)
+
+
+# Hàm clear dùng để xoá tất cả các phần tử ở trong list
+
+
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
+# a.clear() # []
+
+# a.append(1) # [1]
+# a.insert(1, 20)# [1, 20]
+
+# print(a)
+
+
+
+# Sao chép list bản chất là nó sẽ nhân x lần số lượng phần tử ở trong list
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005] 
+
+# b = a * 2
+
+# print(b)
+
+# f = [0] * 1000000
+
+# print(f)
+
+
+# Tìm kiếm phần tử trong list
+a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005] 
+
+# if "Cam" in a:
+#     print("YES")
+# else:
+#     print("NO")
+
+# Thuật toán tìm kiếm tuyến tính
+# ý tưởng là ta sẽ duyệt list, mảng đó từ đầu đến cuối để tìm. Tại mỗi lần lặp ta dùng if để so khớp xem có trùng với phần tử trong mảng/list không.
+# for i in range(0, len(a), 1):
+#     print(f"i: {i}")
+#     if a[i] == "Cam":
+#         print("YES")
+#         break
+
+
+# append -> thêm phần tử vào cuối mảng
+# insert -> dùng để thêm phần tử vào vị trí bất kì
+# pop -> dùng để xoá phần tử cuối hoặc theo index
+# del -> dùng để xoá phần tử nhưng ko trả về phần tử xoá như pop
+# clear -> dùng để xoá toàn bộ phần tử trong list
+# cách gán lại phần tử trong list. ten_list[0] = giá trị mới
+# cách duyệt vòng lặp bằng for range và for in
+# thuật toán tìm kiếm tuyến tính
+
+
+
 
