@@ -236,7 +236,7 @@
 
 
 # Tìm kiếm phần tử trong list
-a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005] 
+# a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005] 
 
 # if "Cam" in a:
 #     print("YES")
@@ -260,7 +260,33 @@ a = ["Cam", "Quýt", "Mít", 2025, 2000, 2003, 2005]
 # cách gán lại phần tử trong list. ten_list[0] = giá trị mới
 # cách duyệt vòng lặp bằng for range và for in
 # thuật toán tìm kiếm tuyến tính
+# kq = [1, 2, 3,  "Ha Noi", 1.5,  2.5, 'Thao', True, False]
+
+# print(kq[0])
+# print(kq[-1])
+# kq.append('Manh') # [1, 2, 3,  "Ha Noi", 1.5,  2.5, 'Thao', True, False, "Manh"]
+# kq.insert(3, "Ha Noi")# [1, 2, 3, "Ha Noi",  "Ha Noi", 1.5,  2.5, 'Thao', True, False, "Manh"]
+# kq.insert(5, "TPHCM") # [1, 2, 3, "Ha Noi",  "Ha Noi", TPHCM, 1.5,  2.5, 'Thao', True, False, "Manh"]
+# kq.pop() # no xoa di phan tu cuoi neu khong truyen gi
+# result = kq.pop(-2)
+# # print(f"result: {result}")
+# del kq[0] # xoa khong co ket qua tra ve
+
+# kq.clear()
+
+# print(kq)
+
+# chi muc
+# for i in range(0, len(kq), 1):# (0, 1, 2, 3, 4, 5)
+#     print(kq[i])
+# for i in  kq:
+#     print(i)
 
 
 
 
+# a  = [1, 2, 3, 1, 2, 3]
+
+# b = a * 2
+
+# print(b)

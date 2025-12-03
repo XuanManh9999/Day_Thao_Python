@@ -117,7 +117,7 @@ from math import * # lấy tất cả thư viện toán học và ném vào buil
 #     for j in range(1, 11):
 #         print(i, "*", j, "=", i*j)
 
-# Vòng lặp break (khi vòng lặp for gặp câu lệnh break thì nó sẽ dừng vòng lặp for đó ngay lật tức), 
+# Vòng lặp break (khi vòng lặp for, while gặp câu lệnh break thì nó sẽ dừng vòng lặp for, while đó ngay lật tức), 
 
 # for i in range(1, 10): # (1 - > 9)
 #     # if i == 4:
@@ -136,8 +136,16 @@ from math import * # lấy tất cả thư viện toán học và ném vào buil
 # continue (được dùng để bỏ qua bước lặp hiện tại các câu lệnh bên dưới nó sẽ không được thực thi, và chuyển tới bước lặp tiếp)
 
 
-for i in range(1, 5): # (1, 4)
-    print(i)
-    if (i == 3):
-        continue
+# for i in range(1, 5): # (1, 4)
+#     print(i)
+#     if (i == 3):
+#         continue
 # 1, 2, 4
+
+
+n = int(input())
+
+sum = 0
+for i in range(1, n + 1, 1):
+    sum += i
+print(sum)

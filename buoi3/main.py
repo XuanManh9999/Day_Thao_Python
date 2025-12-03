@@ -62,20 +62,20 @@
 
 # i = 2 # i = 2
 
-while i <= 10: # 2 <= 10 -> True
-    j = 0 # j = 0
-    print("BANG: ", i) # BẢNG 2
-    while j <= 10: # True
-        if j == 2:
-            j += 1
-            continue
-        if j == 5:
-            break
-        print(i, "*", j, "=", i*j) # 2 * 0 = 0;  2 * 1 = 2; 2 * 2 = 4
-        j += 1# 0 + 1 = 1# 1 + 1 = 2
-    i+= 1
-else:
-    print("Hoàn thành")
+# while i <= 10: # 2 <= 10 -> True
+#     j = 0 # j = 0
+#     print("BANG: ", i) # BẢNG 2
+#     while j <= 10: # True
+#         if j == 2:
+#             j += 1
+#             continue
+#         if j == 5:
+#             break
+#         print(i, "*", j, "=", i*j) # 2 * 0 = 0;  2 * 1 = 2; 2 * 2 = 4
+#         j += 1# 0 + 1 = 1# 1 + 1 = 2
+#     i+= 1
+# else:
+#     print("Hoàn thành")
 
 
 
