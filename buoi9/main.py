@@ -50,7 +50,7 @@
 
 # a = {
 #     22: "age",
-#     "Thao": "city",
+#     "Thao": "city", 
 #     # [1, 2, 3]: "Manh" # error dict không chấp nhật list, các kiểu tập hợp trừ chuỗi làm key
 # }
 

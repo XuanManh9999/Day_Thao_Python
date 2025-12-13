@@ -3,14 +3,11 @@
 #     'age': 25,
 #     'address': 'Hà Nội'
 # }
-
 # a['gender'] = 'Nam'
-
 # print(a['name'])
 # print(a['age'])
 # print(a.get('address'))
 # print(a.get('gender'))
-
 # Trường hợp cần dùng tới kết quả trả về
 # result = a.pop('address')
 # print(f"Bạn vừa xoá: {result}")
@@ -104,8 +101,6 @@
 
 # print(b)
 # print(d)
-
-
 
 # list comprehension
 # a = [1, 2, 3, 4, 5]
