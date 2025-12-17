@@ -209,17 +209,17 @@
 
 
 # Trộn 2 dict  dùng hàm update để hợp 2 dict
-a = {
-    "name": "Mạnh",
-    "address":  "Hà Nôi"
-}
-b = {
-    "age": 50
-}
-a.update(b)
-print(a)
-for (key, value) in a.items():
-    print(key, value)
+# a = {
+#     "name": "Mạnh",
+#     "address":  "Hà Nôi"
+# }
+# b = {
+#     "age": 50
+# }
+# a.update(b)
+# print(a)
+# for (key, value) in a.items():
+#     print(key, value)
 
 
 

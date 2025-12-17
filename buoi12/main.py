@@ -137,9 +137,9 @@
 
 # Hàm issuperset(): Kiểm tra xem tập này có phải là cha của tập khác hay không
 # Một tập ở để được gọi là cha của tập hợp khác khi và chỉ khi là. Tập cha đó chưa "Toàn bộ" các phần tử nằm trong tập hợp con
-s = {"28tech", "codezen", "python"}
-t = {"28tech",  "python"}
-u = {"BKA", "UET", "28tech"}
+# s = {"28tech", "codezen", "python"}
+# t = {"28tech",  "python"}
+# u = {"BKA", "UET", "28tech"}
 
-print(s.issuperset(t)) # True
-print(u.issuperset(t)) # False
+# print(s.issuperset(t)) # True
+# print(u.issuperset(t)) # False
