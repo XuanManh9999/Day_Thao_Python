@@ -211,3 +211,9 @@
 #     return n + sum_n(n - 1)
 
 # print(sum_n(5))
+# [
+#     {
+#         name: "IPHONE",
+#         price: 1000
+#     }
+# ]
