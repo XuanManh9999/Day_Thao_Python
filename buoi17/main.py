@@ -75,13 +75,6 @@
 
 
 # List comprehension và lambda 
-
-
-
-
-
-
-
 # if __name__ == '__main__':
     # res = (lambda x : x ** 2)(10)
     # print(f"res: ", res)
@@ -126,8 +119,6 @@
 # result = list(map(lambda a, b : a - b, a, b))
 
 # print(result) # [3, 5, 7, 9]
-
-
 
 # Hàm filter được sử dụng để trích xuất các phần tử trong một cấu trúc có thể lặp, khi apply một hàm nào đó, nếu là true phần tử đó sẽ được trả về
 # Cấu trúc: filter (fun, [list, tuppe, str...])
