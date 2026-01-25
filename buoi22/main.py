@@ -155,37 +155,194 @@
 
 
 # Xây dựng ứng dụng quản lý người dùng
-class User:
-    # Hàm khởi tạo
-    def __init__(self, name, age, address, point):
-        self.name = name
-        self.age = age
-        self.address = address
-        self.point =  point
+# class User:
+#     # Hàm khởi tạo
+#     def __init__(self, name, age, address, point):
+#         self.name = name
+#         self.age = age
+#         self.address = address
+#         self.point =  point
     
-    def __str__(self):
-        return f"name: {name}; age: {age}; address: {address}; point: {point}"
-
-        
-
-# thêm sv
-
-datas = []
-for i in range(0, 2, 1):
-    name = input("Nhập vào tên: ")
-    age = int(input("Nhập vào tuổi: "))
-    address = input("Nhập vào address: ")
-    point = float(input("Nhập vào point: "))
-    sv =  User(name, age, address, point) # truyền vào hàm tạo để khởi tạo  đối tượng
-    datas.append(sv) # thêm vào mảng
+#     def __str__(self):
+#         return f"name: {self.name}; age: {self.age}; address: {self.address}; point: {self.point}"
 
 
-# sx theo  tuổi tăng  dần
+# # thêm sv
+# datas = []
+# for i in range(0, 2, 1):
+#     name = input("Nhập vào tên: ")
+#     age = int(input("Nhập vào tuổi: "))
+#     address = input("Nhập vào address: ")
+#     point = float(input("Nhập vào point: "))
+#     sv =  User(name, age, address, point) # truyền vào hàm tạo để khởi tạo  đối tượng
+#     datas.append(sv) # thêm vào mảng
+
+
+# # sx theo  tuổi tăng  dần
+# datas.sort(key=lambda u : u.age)
 # for  user in datas:
-#     print(user.age)
-results = datas.sort(key=lambda u : u.age)
-print(results)
-
-# sx theo  số  tiền  giảm dần
-# for user in results:
 #     print(user)
+# # print(results)
+
+
+# class Person:
+#     # thuộc tính tĩnh
+#     con_meo = "Múp" # dùng cho cả đối tượng và lớp
+#     def __init__(self, name):
+#         self.ho_va_ten = name # thuộc tính
+#         pass
+    
+#     # thuộc về đối tượng
+#     def sleep(self):
+#         print("Người đang ngủ")
+    
+    
+#     # thuộc về lớp
+#     # @staticmethod
+#     def eat():
+#         print("Người đang ăn")
+        
+# person = Person("Mạnh") # đối tượng được tạo ra từ lớp
+
+
+# thuộc về đối tượng
+# print(person.ho_va_ten)
+# person.sleep()
+# person.eat()
+# print(person.con_meo)
+
+# thuộc về lớp
+# Person.eat()
+# print(Person.con_meo)
+# Person.eat()
+# lúc nào thì lớp truy cập được
+# lúc nào dùng đối tượng truy cập
+# đối tượng có thể truy cập vào thuộc tính + phương thức miễn là có dùng self và khác @staticmethod (phương thức tĩnh (thuộc về lớp))
+# đối  với lớp,  không cần self 
+
+
+# 4 Tính chất trong lập trình hướng đối tượng
+# Lập trình hướng đối tượng (OOP – Object-Oriented Programming) là một phương pháp lập trình được sử dụng rộng rãi trong phát triển phần mềm hiện đại. 
+# OOP tập trung vào việc tổ chức mã nguồn thành các đối tượng, mỗi đối tượng có thể chứa dữ liệu và các phương thức để thao tác với dữ liệu đó. 
+# Một trong những yếu tố quan trọng giúp OOP trở thành một công cụ mạnh mẽ và dễ dàng quản lý trong việc phát triển phần mềm là bốn tính chất cơ bản của nó:
+#     Encapsulation (Đóng gói), Abstraction (Trừu tượng hóa), Inheritance (Kế thừa) và Polymorphism (Đa hình).
+
+# Tính đóng gói (Encapsulation)
+# Encapsulation (hay còn gọi là đóng gói) là một trong những tính chất cơ bản của lập trình hướng đối tượng. Đóng gói liên quan đến việc nhóm dữ liệu 
+# (các thuộc tính) và các phương thức (hành vi) có liên quan lại với nhau thành một đối tượng duy nhất. Đối tượng này có thể ẩn đi chi tiết triển khai bên 
+# trong và chỉ cung cấp một giao diện công khai để người sử dụng tương tác với nó.
+
+# Một trong những mục tiêu chính của đóng gói là bảo vệ dữ liệu khỏi sự thay đổi không mong muốn và không kiểm soát. Điều này được thực hiện thông qua cơ 
+# chế quyền truy cập. Các trường dữ liệu của một lớp có thể được khai báo là private hoặc protected, nghĩa là chúng không thể bị truy cập trực tiếp từ bên
+# ngoài lớp. Thay vào đó, các phương thức getter và setter sẽ được sử dụng để truy xuất và sửa đổi giá trị của các trường này.
+
+# Trong python gồm có 3 loại phạm vi:
+# public: công khai (đây là mặc định hiện tại)
+# protected: _ (chỉ truy cập được trong phạm vi lớp và kế thừa nếu có) kế thừa
+# private: __ (chỉ có thể truy cập trong lớp) riêng tư
+
+# public: công khai (đây là mặc định hiện tại)
+# class Animal:
+#     def __init__(self, name, desc, age):
+#         self.name = name
+#         self.desc = desc
+#         self.age =  age
+#         pass
+    
+#     def __str__(self):
+#         return f"name: {self.name}; desc: {self.desc}; {self.age}"
+    
+    
+# # Vói public  thì mặc định  khi tạo 1 đối tương ta có thể truy cấp được  full giá trị  mà nó thuộc về
+# dog = Animal("Chó nhà", "chó vịnh bắc bộ", 5)
+
+# print(dog.name)
+# print(dog.desc)
+# print(dog.age)
+# print(dog)
+
+
+# private: phạm vi riêng tư
+# class Animal:
+#     # bên trong
+#     def __init__(self, name, desc, age):
+#         self.__name = name # private: chỉ có thể dùng được ở bên trong lớp
+#         self.desc = desc
+#         self.age =  age
+#         pass
+#     # def __sleep(self):
+#     #     print("Còn mèo béo")
+#     # getter
+#     def get_name(self):
+#         return self.__name
+#     def __str__(self):
+#         return f"name: {self.__name}; desc: {self.desc}; {self.age}"
+    
+
+# # Bên ngoài
+# dog = Animal("Chó nhà", "chó vịnh bắc bộ", 5)
+# dog.__sleep()
+# print(f"dog: {dog}")
+# print(dog.__name) # gọi thuộc tính trực  tiếp error
+# print(dog.name)
+# print(dog.desc)
+# print(dog.age)
+# print(dog)
+# # print(Animal.name)
+# print(dog.get_name()) # gọi phương  thức có chứa giá trị private
+
+
+
+# protected: phạm vi kết thừa  (protected) _. chỉ sử dụng được ở bên trong lớp đó và các lớp kế thừa nó nếu có
+# class Animal:
+#     def __init__(self, name, desc, age):
+#         self._name = name # phạm vi protected 
+#         self.age = age
+#         self.desc = desc
+#         pass
+#     def _sleep(self):
+#         print("Ngủ")
+    
+    
+# con_meo  = Animal("Mèo mướp", 'Việt Nam', 2)
+
+
+# print(con_meo._name) # không nên làm vì vi phạm quy ước
+
+# con_meo._sleep()
+
+
+# Xử lý tiền của  ngân hàng
+
+# hệ thông ngân hàng
+# class Payment:
+#     def __init__(self, name, price):
+#         self.name = name
+#         self.__price = price
+#         pass
+#     def tru_tien(self, so_tien):
+#         self.__price -=  so_tien
+#     def so_tien_con_lai(self):
+#         return self.__price
+#     def ban_tien(self, so_tien_ban):
+#         self.__price  += so_tien_ban
+    
+
+# # bên  ngoài
+# bo_thao = Payment("Bố thảo", 1000)
+# # mua sắm
+# # bo_thao.__price -= 500
+# bo_thao.tru_tien(1000)
+# # hack tên
+# # bo_thao.price  += 100000
+# # bo_thao.__price += 50000000
+# bo_thao.ban_tien(5000)
+
+# print(bo_thao.so_tien_con_lai())
+
+
+# Tính chất kế thừa
+
+# Tính chất đa hình
+
+# Tính chất trừu tượng
