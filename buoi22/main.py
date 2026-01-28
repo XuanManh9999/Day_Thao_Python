@@ -340,9 +340,10 @@
 
 # print(bo_thao.so_tien_con_lai())
 
-
 # Tính chất kế thừa
 
 # Tính chất đa hình
 
 # Tính chất trừu tượng
+
+# 6b
