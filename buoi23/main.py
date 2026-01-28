@@ -271,8 +271,6 @@ while True:
             if sv.tuoi == tuoi_lon_nhat:
                 print(sv)
 
-
-
     if n == 0:
         break
     
